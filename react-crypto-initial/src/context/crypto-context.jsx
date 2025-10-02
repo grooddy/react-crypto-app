@@ -21,6 +21,7 @@ export function CryptoContextProvider({ children }) {
         growPercent: percentDifference(asset.price, coin.price), // differenceprice  when buy crypto and now price
         totalAmount: asset.amount * coin.price, // сount of currance * his price now = totalPrice
         totalProfit: asset.amount * coin.price - asset.amount * asset.price, // difference , price currency when buy * count currance - count currancy on now price
+        name: coin.name,
         ...asset,
       };
     });
